@@ -1,5 +1,5 @@
 {
-  "name": "thecoolclub",
+  "name": "%project-name%",
   "private": true,
   "version": "2.0",
   "devDependencies": {
