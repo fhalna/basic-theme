@@ -1,7 +1,7 @@
 {
-  "name": "%project-name%",
+  "name": "Myproject",
   "private": true,
-  "version": "2.0",
+  "version": "0.1.1",
   "devDependencies": {
     "amd-optimize": "^0.6.1",
     "grunt": "^1.0.1",
