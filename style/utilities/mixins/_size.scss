@@ -1,0 +1,8 @@
+// Sizing shortcuts
+@mixin size($width: 1em, $height: 1em) {
+	height: $height;
+	width: $width;
+}
+@mixin square($size: 5px) {
+	@include size($size, $size);
+}

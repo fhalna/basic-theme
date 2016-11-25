@@ -1,0 +1,162 @@
+body {
+  &.loading {
+    .loader {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: white;
+    display: table;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all, 1s, ease-in-out, 1s);
+
+    .center {
+
+    }
+  }
+
+  header.main-header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    height: 65px;
+    border-bottom: 1px solid #eee;
+    @include box-sizing(border-box);
+
+    .inner {
+      height: 100%;
+      color: black;
+
+      & * {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      a.logo, .icon-menu-mobile {
+        position: relative;
+        z-index: 1;
+      }
+      a.logo {
+        height: 100%;
+
+        &:hover {
+          img {
+            &:first-child {
+              display: none;
+            }
+            &:last-child {
+              display: block;
+            }
+          }
+        }
+        img {
+          height: 100%;
+          width: auto;
+          padding: 15px 0;
+          @include box-sizing(border-box);
+
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+
+      nav {
+        font-size: 0;
+        float: right;
+
+        .center {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        a, & > span {
+          margin: 25px 0;
+          display: inline-block;
+          font: 20px/20px $fontDinRegular;
+          letter-spacing: 0.5px;
+
+          &:not(:last-child) {
+            margin: 25px 40px 25px 0;
+          }
+        }
+      }
+      .icon-menu-mobile {
+        float: right;
+        line-height: 70px;
+        font-size: 20px;
+        display: none;
+      }
+    }
+    @include breakpoint('mobile_landscape') {
+      .inner {
+        nav {
+          position: fixed;
+          display: table;
+          width: 100vw;
+          left: 0;
+          top: 0;
+          height: 100vh;
+          background: white;
+          opacity: 0;
+          visibility: hidden;
+          @include transition(opacity, 0.5s, ease-in-out);
+
+          a {
+            display: table;
+            margin: 0 auto;
+
+            &:not(:last-child) {
+              margin: 0 auto 20px;
+            }
+          }
+        }
+        .icon-menu-mobile {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .view {
+    padding: 75px 0 0;
+  }
+
+  footer.main-footer {
+    padding: 75px 0;
+
+    .inner {
+      position: relative;
+    }
+  }
+}
+
+.inner {
+  max-width: $maxWidth;
+  padding: 0 $smallSpacing;
+  margin: 0 auto;
+  @include box-sizing(border-box);
+}
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.instantclick-bar {
+  background: black !important;
+}
+
+[data-bind^="tap:"] {
+  cursor: pointer;
+}

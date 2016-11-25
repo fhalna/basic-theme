@@ -1,0 +1,22 @@
+{
+  "name": "thecoolclub",
+  "private": true,
+  "version": "2.0",
+  "devDependencies": {
+    "amd-optimize": "^0.6.1",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-requirejs": "^1.0.0",
+    "grunt-deploy": "^0.1.7",
+    "grunt-ftp-deploy": "^0.1.10",
+    "grunt-remove-logging": "^0.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-order": "^1.1.1",
+    "gulp-requirejs": "^0.3.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "imagemin-mozjpeg": "^6.0.0"
+  }
+}

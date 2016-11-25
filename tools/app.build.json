@@ -1,0 +1,15 @@
+{
+    "dir": "../build",
+    "appDir": "./",
+    "baseUrl": "./script/",
+    "fileExclusionRegExp": /^node_modules$/,
+    "optimizeCss": "standard",
+    "optimize": "uglify",
+    "paths": {
+        jquery: "lib/jquery/jquery",
+        knockout: "lib/knockout/knockout",
+        greensock: "lib/gsap/greensock",
+        TweenLite: "lib/gsap/TweenLite"
+    },
+    "modules": [{ "name": "app/main" }]
+}

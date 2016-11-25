@@ -1,0 +1,14 @@
+/**
+ * Grid Sass
+ * license: GNU GENERAL PUBLIC LICENSE Version 2, June 1991.
+ * copyright: Copyright (c) 2013 Mient-jan Stelling
+ * @author Mient-jan Stelling <mientjan.stelling$gmail.com>
+ * @param {string} $name (grid) - Classname
+ * @param {size} $width (100px) - Width of the grid
+ * @param {size} $height (100px) - Height of the grid
+ * @param {number} $x (10) - X Blocks
+ * @param {number} $y (10) - Y Blocks
+ * @param {number} $margin (0) - Margin between blocks
+ */
+
+/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,6 @@
+/**
+ * Z-Index function
+ * @param {string} $list (Array) - The list to find the current z-index in
+ * @param {string} $element (String) - The name of the current element, must be in the $list
+ * @returns {number}
+ */

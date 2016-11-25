@@ -1,0 +1,55 @@
+body {
+  font: $regularText;
+
+  @include breakpoint('mobile_portrait') {
+    font-size: 15px;
+  }
+}
+
+a, button{
+  font: $regularText;
+  text-decoration: none;
+  @include transition(opacity, 0.5s, ease-in-out);
+}
+
+a {
+  color: inherit;
+}
+
+h1,h2,h3,h4,h5{
+  margin: 0;
+}
+
+p::selection, h1::selection, span::selection,  h2::selection, a::selection, div::selection {
+  background: black;
+  color: white;
+}
+
+p {
+  font-size: 25px;
+
+  @include breakpoint('mobile_portrait') {
+    font-size: 16px;
+  }
+}
+h1 {
+  //font: 55px/1.5 $fontDinRegular;
+}
+h2 {
+  font: 25px/1.5 $fontDinBold;
+}
+h3 {
+  font: 20px/1.5 $fontDinBold;
+}
+h4 {
+  font: 16px/1.5 $fontDinBold;
+}
+
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+
+

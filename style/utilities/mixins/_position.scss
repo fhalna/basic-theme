@@ -1,0 +1,40 @@
+// X, Y, Z (Fallback Top, Left IE)
+@mixin position($x:0, $y:0, $z:0) {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	@include translate3d($x, $y, $z);
+
+	.oldie & {
+		left: $x * 1px;
+		top: $y * 1px;
+	}
+}
+
+@mixin pos($top: 0, $right: auto, $bottom: auto, $left: 0) {
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
+}
+@mixin offset($x: 0, $y: 0){
+	top: $y;
+	left: $x;
+}
+
+// Positioning an element absolute in the center
+@mixin abs-center($width, $height){
+	position: absolute;
+	@include pos(50%, auto, auto, 50%);
+	@include size($width, $height);
+	margin-top: -($height / 2);
+	margin-left: -($width / 2);
+}
+
+// Center-align a block level element
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

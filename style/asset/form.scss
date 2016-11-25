@@ -1,0 +1,29 @@
+.customCheckbox {
+	opacity: 0;
+	float: left;
+	width: 0;
+}
+
+.customCheckbox + label {
+	margin: 0;
+	clear: none;
+	cursor: pointer;
+	background: url('../image/register/checkbox.png') 0 -18px no-repeat;
+	width: 18px;
+	height: 18px;
+	padding-left: 25px;
+	font-size: 15px;
+}
+
+.customCheckbox:checked + label {
+	background-position: top left;
+}
+
+.validation-failed .customCheckbox + label {
+	background-position: bottom left;
+}
+
+.validation-failed .customCheckbox:checked + label {
+	background-position: top left;
+	color: white;
+}
